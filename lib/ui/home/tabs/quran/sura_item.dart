@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:islami/ui/home/tabs/quran/quran_resurces.dart';
 import 'package:islami/utils/app_assets.dart';
 import 'package:islami/utils/app_style.dart';
 
 class SuraItem extends StatelessWidget {
-  const SuraItem({super.key});
+  int index;
+   SuraItem({super.key,required this.index});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +17,7 @@ class SuraItem extends StatelessWidget {
           alignment: Alignment.center,
           children: [
             Image.asset(AppAssets.suraNumberIcon),
-            Text('1',
+            Text('${index + 1}',
             style: AppStyle.bold14White,),
           ],
         ),
@@ -23,14 +25,14 @@ class SuraItem extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Al-Fatiha',
+            Text(QuranResurces.englishQuranList[index],
             style: AppStyle.bold20White,),
-            Text('7 Verses',
+            Text(QuranResurces.versesNumberList[index],
             style: AppStyle.bold14White,),
           ],
         ),
         Spacer(),
-        Text('الفاتحة',
+        Text(QuranResurces.arabicQauranList[index],
         style: AppStyle.bold20White,)
       ],
     );

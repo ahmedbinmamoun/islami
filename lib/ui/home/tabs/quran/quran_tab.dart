@@ -99,7 +99,7 @@ class QuranTab extends StatelessWidget {
             child: ListView.separated(
               padding: EdgeInsets.zero,
               itemBuilder: (context, index) {
-              return SuraItem();
+              return SuraItem(index: index ,);
             },
              separatorBuilder: (context, index) {
                return Divider(
