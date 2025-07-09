@@ -3,6 +3,11 @@ class AppAssets {
   static const String splashLogo = 'assets/images/splash_logo.png';
   static const String splashBranding = 'assets/images/branding_logo.png';
   static const String iconQuran = 'assets/images/icon_quran.png';
+  static const String welcomeImage = 'assets/images/welcome.png';
+  static const String readingQuran = 'assets/images/reading_quran.png';
+  static const String radioMic = 'assets/images/mic_radio.png';
+  static const String maskWelcome = 'assets/images/mask_welcom.png';
+  static const String bearish = 'assets/images/bearish.png';
   static const String iconHadeth = 'assets/images/icon_hadeth.png';
   static const String iconSebha = 'assets/images/icon_sebha.png';
   static const String iconRadio = 'assets/images/icon_radio.png';
