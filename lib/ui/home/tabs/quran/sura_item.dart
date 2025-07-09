@@ -27,7 +27,7 @@ class SuraItem extends StatelessWidget {
           children: [
             Text(QuranResurces.englishQuranList[index],
             style: AppStyle.bold20White,),
-            Text(QuranResurces.versesNumberList[index],
+            Text('${QuranResurces.versesNumberList[index]} Verses',
             style: AppStyle.bold14White,),
           ],
         ),
